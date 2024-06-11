@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="bp" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.ucr.paraiso.prograii.pruebaproyectoi.pruebaproyectoiprogramacion.client.controller.EditController">
+   <bottom>
+      <AnchorPane prefHeight="400.0" prefWidth="614.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="744.0" style="-fx-background-color: #c5c5c5;">
+               <children>
+                  <TextField fx:id="nameArea" layoutX="28.0" layoutY="101.0" />
+                  <Text layoutX="29.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contexto:">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="contextArea" layoutX="32.0" layoutY="162.0" />
+                  <TextField fx:id="exampleArea" layoutX="223.0" layoutY="101.0" />
+                  <Text layoutX="223.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ejemplos:" wrappingWidth="91.0">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="24.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="447.0" layoutY="118.0" mnemonicParsing="false" onAction="#editOnAction" prefHeight="44.0" prefWidth="111.0" style="-fx-background-color: #1e1e1e;" text="Agregar" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="18.0" />
+                     </font></Button>
+                  <Button layoutX="588.0" layoutY="118.0" mnemonicParsing="false" onAction="#goBackOnAction" prefHeight="44.0" prefWidth="111.0" style="-fx-background-color: #1e1e1e;" text="Volver" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="18.0" />
+                     </font></Button>
+                  <Text layoutX="32.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Problema:" wrappingWidth="91.0">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="32.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solucion:" wrappingWidth="91.0">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="problemArea" layoutX="32.0" layoutY="220.0" />
+                  <TextField fx:id="solutionArea" layoutX="32.0" layoutY="278.0" />
+                  <Text layoutX="223.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha:" wrappingWidth="91.0">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="24.0" />
+                     </font>
+                  </Text>
+                  <DatePicker fx:id="datePicker" layoutX="224.0" layoutY="278.0" prefHeight="25.0" prefWidth="147.0" />
+                  <Text layoutX="30.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estado:  " wrappingWidth="120.93756103515625">
+                     <font>
+                        <Font name="Impact" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="state" layoutX="104.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conectado" wrappingWidth="112.73583984375">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="descripcionArea" layoutX="223.0" layoutY="220.0" />
+                  <Text layoutX="223.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clasificacion:">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="226.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripcion:">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="clasifiArea" layoutX="223.0" layoutY="162.0" />
+               </children>
+            </Pane>
+            <Line endX="638.5472412109375" layoutX="105.0" layoutY="350.0" startX="-100.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
